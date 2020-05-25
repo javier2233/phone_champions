@@ -1,0 +1,7 @@
+home:
+  path: /
+  controller: \App\FrontEndBundle\Controller\HomeController::index
+
+user_form:
+  path: /user
+  controller: \App\FrontEndBundle\Controller\FormUserController::formCreateActor

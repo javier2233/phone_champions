@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link href="{{ asset('css/phone_champions.css') }}" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="{{ asset('images/mini_logo_phone_champions_y.png') }}" />
+</head>
+<body>
+<header>
+    {% block header %}
+        {% include 'bundles/FrontEndBundle/header.html.twig' %}
+    {% endblock %}
+</header>
+{% block body %}{% endblock %}
+<footer>
+    {% block footer %}
+        {% include 'bundles/FrontEndBundle/footer.html.twig' %}
+    {% endblock %}
+</footer>
+</body>
+</html>
