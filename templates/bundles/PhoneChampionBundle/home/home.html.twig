@@ -1,0 +1,29 @@
+{% extends 'bundles/PhoneChampionBundle/base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="home_info">
+
+
+                    <h1 class="titulo_home">Bienvenido a Phone Champions</h1>
+                    <h5>Acá podrás comparar todos los dispositivos que desees al tiempo, también podrás registrarte y tener un histórico de tus comparaciones.</h5>
+                    <p>
+                        <a href="/comparar">
+                            Ir Comparar
+                        </a>
+                    </p>
+                    <p>
+                        <a href="/comprar">
+                            Registrarte!
+                        </a>
+                    </p>
+                    <img src="{{ asset("images/logo_phone_champions.png") }}" alt="Bienvenido a Phone Champions" title="Bienvenido a Phone Champions">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

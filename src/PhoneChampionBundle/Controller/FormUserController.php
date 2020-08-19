@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\FrontEndBundle\Controller;
+namespace App\PhoneChampionBundle\Controller;
 
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -9,9 +9,8 @@ use Symfony\Component\HttpFoundation\Response;
 
 class FormUserController extends AbstractController
 {
-    public function formCreateActor(){
-        return new Response(
-            '<html><body>Lucky number: </body></html>'
-        );
+    public function formCreateUser(){
+
+
     }
 }

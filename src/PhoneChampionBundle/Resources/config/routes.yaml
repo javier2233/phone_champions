@@ -1,0 +1,16 @@
+home:
+  path: /
+  controller: \App\PhoneChampionBundle\Controller\HomeController::index
+
+comparar:
+  path: /comparar
+  controller: \App\PhoneChampionBundle\Controller\CompararController::index
+
+user_form:
+  path: /user
+  controller: \App\PhoneChampionBundle\Controller\FormUserController::formCreateActor
+
+user_create:
+  path: /user/create
+  controller: \App\PhoneChampionBundle\Controller\User\UserCreateController::createUserAction
+  methods: [POST]

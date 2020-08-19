@@ -1,3 +1,118 @@
-body {
-  background: blueviolet;
+h1,h2,h3{
+  font-family: 'Squada One', cursive;
+}
+p{font-family: 'Bentham', serif;}
+header{
+  .content{
+    display: flex;
+    padding: 3vh 0vh;
+    .logo_menu{
+      width: 50px;
+      height: auto;
+    }
+    .logo_menu img{
+      width: 100%;
+    }
+    nav{
+      width: 100%;
+      .menu{display: flex;list-style: none;padding: 0;margin: 0;justify-content: space-around;}
+      .menu li {font-family: 'Squada One', cursive;padding: 1.5vh 1vh;text-align: center}
+      .menu li a{color: black}
+      .menu li a:hover{color: #efc241}
+    }
+  }
+}
+.home_info{
+  text-align: center;
+  h1{
+    padding: 2vh;
+  }
+  h5{
+    font-size: 19pt;
+    padding: 2vh;
+  }
+}
+.compara_info{
+  .ring{
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+  }
+  .ring .item_device:last-child::after{
+    display: none;
+  }
+  text-align: center;
+  .item_device{
+    border: 5px solid #ffd148;
+    box-sizing: border-box;
+    padding: 0.5vh;
+    border-radius: 10px 10px 5px 5px;
+    text-align: left;
+    position: relative;
+    margin-right: 4vh;
+    .brand_dv{
+      text-align: center;
+      padding: 0.5vh;
+      p{
+        margin: 0;
+
+      }
+    }
+    .model_dv{
+      text-align: center;
+      padding: 0.5vh;
+      display: none;
+      background: black;
+      color: white;
+      border: 3px solid gray;
+      margin-bottom: 0.5vh;
+      p{
+        margin: 0;
+      }
+    }
+    .numeric_dv{
+      .numeric_board{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        p{
+          margin: 0;
+          font-size: 9pt;
+          width: 33%;
+          padding-bottom: 0.3vh;
+          border: 1px solid black;
+          box-sizing: border-box;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+  .item_device::after{
+    content: 'VS';
+    position: absolute;
+    right: -30px;
+    top: 40%;
+    font-size: 11pt;
+    font-weight: bold;
+  }
+  .versus_dv{
+    padding: 1vh;
+    align-items: center;
+    font-size: 10pt;
+    font-weight: bolder;
+    align-self: flex-end;
+  }
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background: #ffd148;
+  border-radius: 25px 25px 0px 0px;
+  padding: 2vh;
+  p{
+    margin: 0;
+    font-weight: bold;
+  }
 }

@@ -3,5 +3,5 @@
 #    controller: App\Controller\DefaultController::index
 
 user:
-  resource: "@FrontEndBundle/Resources/config/routes.yaml"
+  resource: "@PhoneChampionBundle/Resources/config/routes.yaml"
   prefix:
